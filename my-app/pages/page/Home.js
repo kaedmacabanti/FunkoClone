@@ -10,37 +10,37 @@ import Footer from '../../components/Footer'
 // import subBanner2 from "../assets/images/home/subBanner2.png";
 
 
-const HomePage = () => {
+// const HomePage = () => {
   
-  return (
-    <>
-    <div className="banner center">
-      <Banner />
-    </div>
+//   return (
+//     <>
+//     <div className="banner center">
+//       <Banner />
+//     </div>
 
-    <div className="banner">
-      <GiftGuide />
-    </div>
+//     <div className="banner">
+//       <GiftGuide />
+//     </div>
 
-    <div class="subBanner center">
-      <div class="sb1"><img src={subBanner1} alt="subbanner1" width={725}/></div>
-      <div class="sb2"><img src={subBanner2} alt="subbanner2" width={725}/></div>
-    </div>  
+//     <div class="subBanner center">
+//       <div class="sb1"><img src={subBanner1} alt="subbanner1" width={725}/></div>
+//       <div class="sb2"><img src={subBanner2} alt="subbanner2" width={725}/></div>
+//     </div>  
 
-    <div className='px-[4rem]'>
-      <NewReleases />  
-    </div>
+//     <div className='px-[4rem]'>
+//       <NewReleases />  
+//     </div>
  
-    <div className="botBanner center">
-      <BottomBanner />
+//     <div className="botBanner center">
+//       <BottomBanner />
       
-    </div>
+//     </div>
 
 
-    </>
-  );
+//     </>
+//   );
 
-  }
+//   }
 
 
 const MainHomePage = () => {

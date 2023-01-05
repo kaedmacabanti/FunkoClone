@@ -35,7 +35,7 @@ const Navigation = () => {
         <li className='usericont'><i className="fa-solid fa-circle-user"></i></li> 
         <li className=''><i className="fa-solid fa-bag-shopping"></i></li> 
         <li className='globeicont flex items-center'><i className="fa-sharp fa-solid fa-earth-americas"></i><span className='text-sm p-2'>US</span> </li> 
-        <li className='menu' onClick={()=>setShow(true)}><i class="fa-sharp fa-solid fa-bars"></i></li>
+        <li className='menu' onClick={()=>setShow(true)}><i className="fa-sharp fa-solid fa-bars"></i></li>
       </ul>
       {
         show?<SideNavigation closeNav={setShow} />:null

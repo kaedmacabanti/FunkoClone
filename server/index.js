@@ -4,8 +4,12 @@ const mongoose = require("mongoose");
 const ProductModel  = require('./models/products');
 const db = require("./connection")
 
+const cors = require('cors')
+
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
+
+app.use(cors())
  
 //insertOne
 app.post('/', async(req,res)=>{
@@ -30,7 +34,7 @@ app.get('/',async (req,res)=>{
 })
 
 app.listen(8000,()=>{
-    console.log("listening to port 3000")
+    console.log("listening to port http://localhost:8000/")
 })
 
 

@@ -19,36 +19,38 @@ import gg16 from '../assets/images/gift-guide/gg16.png'
 import gg17 from '../assets/images/gift-guide/gg17.png'
 import subBanner1 from "../assets/images/home/subBanner1.png";
 import subBanner2 from "../assets/images/home/subBanner2.png";
-// import { NewReleases } from "./AllProducts";
+import NewReleases  from "./AllProducts";
 import botBanner from "../assets/images/home/botBanner.png";
 
 const TopBanner = () => {
     return (
-       <Image src={topBanner} alt="" width={1450}/>
+      <div className="py-[2rem]">
+          <Image src={topBanner} alt="" width={1450}/>
+      </div>
 )}
 
 const GiftGuide = () => {
     return (
       <body>
-          <div class="containerGift center">
-              <div class="cards">
-                  <div class="card center"><Image src={gg1} alt="1" width={110}/></div>
-                  <div class="card center"><Image src={gg2} alt="2" width={120}/></div>
-                  <div class="card center"><Image src={gg3} alt="3" width={120}/></div>
-                  <div class="card center"><Image src={gg4} alt="4" width={120}/></div>
-                  <div class="card center"><Image src={gg5} alt="5" width={120}/></div>
-                  <div class="card center"><Image src={gg6} alt="6" width={120}/></div>
-                  <div class="card center"><Image src={gg7} alt="7" width={120}/></div>
-                  <div class="card center"><Image src={gg8} alt="8" width={120}/></div>
-                  <div class="card center"><Image src={gg9} alt="9" width={120}/></div>
-                  <div class="card center"><Image src={gg10} alt="10" width={110}/></div>
-                  <div class="card center"><Image src={gg11} alt="11" width={120}/></div>
-                  <div class="card center"><Image src={gg12} alt="12" width={120}/></div>
-                  <div class="card center"><Image src={gg13} alt="13" width={120}/></div>
-                  <div class="card center"><Image src={gg14} alt="14" width={120}/></div>
-                  <div class="card center"><Image src={gg15} alt="15" width={120}/></div>
-                  <div class="card center"><Image src={gg16} alt="16" width={120}/></div>
-                  <div class="card center"><Image src={gg17} alt="17" width={120}/></div>
+          <div className="">
+              <div className="display flex">
+                  <div className="card center"><Image src={gg1} alt="1" width={110}/></div>
+                  <div className="card center"><Image src={gg2} alt="2" width={120}/></div>
+                  <div className="card center"><Image src={gg3} alt="3" width={120}/></div>
+                  <div className="card center"><Image src={gg4} alt="4" width={120}/></div>
+                  <div className="card center"><Image src={gg5} alt="5" width={120}/></div>
+                  <div className="card center"><Image src={gg6} alt="6" width={120}/></div>
+                  <div className="card center"><Image src={gg7} alt="7" width={120}/></div>
+                  <div className="card center"><Image src={gg8} alt="8" width={120}/></div>
+                  <div className="card center"><Image src={gg9} alt="9" width={120}/></div>
+                  <div className="card center"><Image src={gg10} alt="10" width={110}/></div>
+                  <div className="card center"><Image src={gg11} alt="11" width={120}/></div>
+                  <div className="card center"><Image src={gg12} alt="12" width={120}/></div>
+                  <div className="card center"><Image src={gg13} alt="13" width={120}/></div>
+                  <div className="card center"><Image src={gg14} alt="14" width={120}/></div>
+                  <div className="card center"><Image src={gg15} alt="15" width={120}/></div>
+                  <div className="card center"><Image src={gg16} alt="16" width={120}/></div>
+                  <div className="card center"><Image src={gg17} alt="17" width={120}/></div>
               </div>
           </div>
       </body>
@@ -57,36 +59,24 @@ const GiftGuide = () => {
   
 const SubBanner = () => {
   return (
-    <div class="display flex">
+    <div className="display flex">
        <Image src={subBanner1} alt="" width={725}/>
        <Image src={subBanner2} alt="" width={725}/>
     </div>  
   )
 }
 
-  
-// const NewReleases = () => {
-//     return (
-//       <div class="display flex">
-//          <Image src={subBanner1} alt="" width={725}/>
-//          <Image src={subBanner2} alt="" width={725}/>
-//       </div>  
-//     )
-// }
-
 export const BottomBanner = () => {
     return (
        <Image src={botBanner} alt=" " width={1450}/>
   )}
   
-   
-  
-
 const HomeComponents = () => {
   return (
-    <div className="">
+    <div className="display flex flex-col items-center ">
         <TopBanner/>
-        <GiftGuide/>
+        {/* <GiftGuide/> */}
+        <NewReleases/>
         <SubBanner/>
         <BottomBanner/>
     </div>

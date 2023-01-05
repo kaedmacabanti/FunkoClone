@@ -19,7 +19,7 @@ import gg16 from '../assets/images/gift-guide/gg16.png'
 import gg17 from '../assets/images/gift-guide/gg17.png'
 import subBanner1 from "../assets/images/home/subBanner1.png";
 import subBanner2 from "../assets/images/home/subBanner2.png";
-import { NewReleases } from "./AllProducts";
+// import { NewReleases } from "./AllProducts";
 import botBanner from "../assets/images/home/botBanner.png";
 
 const TopBanner = () => {
@@ -65,14 +65,14 @@ const SubBanner = () => {
 }
 
   
-const NewReleases = () => {
-    return (
-      <div class="display flex">
-         <Image src={subBanner1} alt="" width={725}/>
-         <Image src={subBanner2} alt="" width={725}/>
-      </div>  
-    )
-}
+// const NewReleases = () => {
+//     return (
+//       <div class="display flex">
+//          <Image src={subBanner1} alt="" width={725}/>
+//          <Image src={subBanner2} alt="" width={725}/>
+//       </div>  
+//     )
+// }
 
 export const BottomBanner = () => {
     return (

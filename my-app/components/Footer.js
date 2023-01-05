@@ -6,18 +6,19 @@ import fb from '../assets/images/fb.png'
 import twt from '../assets/images/twt.png'
 import ig from '../assets/images/ig.png'
 import yt from '../assets/images/yt.png'
+import Image from 'next/image'
 
 const SocialLink = () => {
   return (
     <div className='socialmedia'>
       <ul className='footerfunko px-[2rem]'>
-        <img className='logo' src={logo} alt="" />
+        <Image className='logo' src={logo} alt="" />
       </ul>
       <ul>
-        <li><img src={fb} alt="" /></li>
-        <li><img src={twt} alt="" /></li>
-        <li><img src={ig} alt="" /></li>
-        <li><img src={yt} alt="" /></li>
+        <li><Image src={fb} width={55} alt="" /></li>
+        <li><Image src={twt} width={55} alt="" /></li>
+        <li><Image src={ig} width={55} alt="" /></li>
+        <li><Image src={yt} width={55} alt="" /></li>
       </ul>
     </div>
   )
@@ -28,8 +29,8 @@ const WebStore = () => {
   return (
     <div className='webstore'>
         <div className='sociallinks'>
-            <img src={playstore} alt="" />
-            <img src={apple} alt="" />
+            <Image height={55} src={playstore} alt="" />
+            <Image height={55} src={apple} alt="" />
         </div>
     </div>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
+import HomeComponents from '../../components/HomeComponents'
 // import { NewReleases }  from '../pages_crud/Products'
 // import Banner from '../components/Banner' 
 // import BottomBanner from '../components/Banner'
@@ -47,7 +48,7 @@ const MainHomePage = () => {
   return (
     <div>
       <Navigation/>
-       {/* <HomePage/> */}
+       <HomeComponents/>
       <Footer/>
     </div>
   )

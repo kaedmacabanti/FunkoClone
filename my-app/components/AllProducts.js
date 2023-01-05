@@ -30,11 +30,11 @@ const AllProducts = () => {
 
         
       {products.map(product=>(
-        <Link to={`/products/details/${product.id}`}>
+        <Link key={product.id} to={`/products/details/${product.id}`}>
      
             <div className='flex flex-col items-center  w-[15rem] h-[435px] px-2 pb-2  bg-white m-2 rounded-[10px]  ' key={product.id}>
            
-            <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} className='h-[4.5rem] z-20 absolute'/></div>
+            <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} alt="" className='h-[4.5rem] z-20 absolute'/></div>
                 <div className='img h-[50%] relative   '>
                     
                     <Image  className='h-[100%]' src={"Productimages/"+product.img_b} alt="" />
@@ -79,7 +79,7 @@ export const NewReleases = () => {
     <div className='mainproductcontainerNR w-full p-[4rem]'>
     {products.slice(products, productsToShow)
     .map(product => (
-    <Link to={`/products/details/${product.id}`}>
+    <Link key={product.id} to={`/products/details/${product.id}`}>
     <div className='productcontainer relative w-[20rem] h-[500px] p-3' key={product.id}>
     <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} className='h-[4.5rem] z-20 absolute'/></div>
       <div className='img h-[70%] relative   '>

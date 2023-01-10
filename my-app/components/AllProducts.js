@@ -26,7 +26,7 @@ const NewReleases = () => {
   },[]);
 
   return (
-    <div className='display flex justify-center '>
+    <div className='display flex justify-center py-[2rem] '>
     {products.slice(products, productsToShow)
     .map(product => (
       

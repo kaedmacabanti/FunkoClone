@@ -25,7 +25,7 @@ import botBanner from "../assets/images/home/botBanner.png";
 
 const TopBanner = () => {
     return (
-      <div className="py-[2rem]">
+      <div className="py-[2rem] ">
           <Image src={topBanner} alt="" width={1450}/>
       </div>
 )}
@@ -33,7 +33,7 @@ const TopBanner = () => {
 const GiftGuide = () => {
     return (
       <body>
-          <div className="">
+          <div className="py-[2rem] ">
               <div className="display flex">
                   <div className="card center"><Image src={gg1} alt="1" width={110}/></div>
                   <div className="card center"><Image src={gg2} alt="2" width={120}/></div>
@@ -60,7 +60,7 @@ const GiftGuide = () => {
   
 const SubBanner = () => {
   return (
-    <div className="display flex">
+    <div className="display flex py-[2rem] ">
        <Image src={subBanner1} alt="" width={725}/>
        <Image src={subBanner2} alt="" width={725}/>
     </div>  
@@ -69,7 +69,10 @@ const SubBanner = () => {
 
 export const BottomBanner = () => {
     return (
-       <Image src={botBanner} alt=" " width={1450}/>
+      <div className="py-[2rem] ">
+          <Image src={botBanner} alt=" " width={1450}/>
+      </div>
+      
   )}
   
 const HomeComponents = () => {

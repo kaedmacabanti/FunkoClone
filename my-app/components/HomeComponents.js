@@ -20,6 +20,7 @@ import gg17 from '../assets/images/gift-guide/gg17.png'
 import subBanner1 from "../assets/images/home/subBanner1.png";
 import subBanner2 from "../assets/images/home/subBanner2.png";
 import NewReleases  from "./AllProducts";
+// import AllProducts  from "./AllProducts";
 import botBanner from "../assets/images/home/botBanner.png";
 
 const TopBanner = () => {
@@ -77,6 +78,7 @@ const HomeComponents = () => {
         <TopBanner/>
         {/* <GiftGuide/> */}
         <NewReleases/>
+        {/* <AllProducts/> */}
         <SubBanner/>
         <BottomBanner/>
     </div>

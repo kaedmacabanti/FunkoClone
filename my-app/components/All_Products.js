@@ -13,10 +13,9 @@ const NewReleases = () => {
   useEffect(()=>{
       const fetchAllProducts = async()=>{
           try{
-            //   const res = await axios.get("http://localhost:9001/allproducts")
-              const res = await axios.get("https://bluedragon-six.vercel.app/allproducts")
+              const res = await axios.get("https://bluedragon-six.vercel.app/all_products")
               setProducts(res.data)
-              console.log(res.data)
+              console.log(products)
           }catch(err){
               console.log(err)
           }
@@ -27,16 +26,15 @@ const NewReleases = () => {
 
   return (
     <div className='display flex justify-center py-[2rem] '>
-    {products.slice(products, productsToShow)
-    .map(product => (
-      
+    {products.map(product=> (
+    <Link href={`http://localhost:3000/page/product/${product.id}`}> 
     <div className='productcontainer relative w-[20rem] h-[500px] p-3' key={product.id}>
         <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} width={0} height={100} className='h-[4.5rem] z-20 absolute'/></div>
         <div className='img h-[70%] relative   '>
             <div className='h-[100%]'>
                <Image layout='fill' src={"/Assets/"+product.picture2} alt="" />
             </div>
-             <div className='h-[100%] w-[100%] absolute top-0 hover:hidden transition ease-in-out delay-100 '>
+             <div className='h-[100%] w-[100%] absolute top-0 hover:opacity-0 transition ease-in-out delay-00 '>
                 <div className='h-[100%]'>
                   <Image layout='fill' src={"/Assets/"+product.picture1} alt="" />
                 </div>
@@ -53,6 +51,7 @@ const NewReleases = () => {
             <button type="button" className='cardbtn mt-2  w-[100%] h-[2.5rem]  rounded-[28px] bg-[#f3f3f7] '>ADD TO CART </button> 
         </div>
     </div>
+    </Link>
 
     ))}
  

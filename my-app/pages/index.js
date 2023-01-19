@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
       <main className="">
         <MainHomePage/>
-    
       </main>
     </>
   )

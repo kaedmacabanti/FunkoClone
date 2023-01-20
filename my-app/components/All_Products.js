@@ -27,8 +27,8 @@ const NewReleases = () => {
   return (
     <div className='display flex justify-center py-[2rem] '>
     {products.map(product=> (
-    <Link href={`http://localhost:3000/page/product/${product.id}`}> 
-    <div className='productcontainer relative w-[20rem] h-[500px] p-3' key={product.id}>
+    <Link href={`http://localhost:3000/page/product/${product.id}`} key={product.id}> 
+    <div className='productcontainer relative w-[20rem] h-[500px] p-3'  >
         <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} width={0} height={100} className='h-[4.5rem] z-20 absolute'/></div>
         <div className='img h-[70%] relative   '>
             <div className='h-[100%]'>
@@ -81,7 +81,7 @@ const AllProducts = () => {
     
     <div className='display flex justify-center w-full'>
       {products.map(product=>(
-            <div className='flex flex-col items-center  w-[15rem] h-[435px] px-2 pb-2  bg-white m-2 rounded-[10px]  ' key={product.id}>
+            <div className='flex flex-col items-center  w-[15rem] h-[435px] px-2 pb-2  bg-white m-2 rounded-[10px]' key={product.id}>
             <div className='w-full bg-slate-400 h-[0rem]'><Image src={flag} height={100} width={0} alt="" className='h-[4.5rem] z-20 absolute'/></div>
                 <div className='img h-[50%] relative   '>
                     <div className='h-[100%] bg-slate-500'>

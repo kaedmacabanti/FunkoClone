@@ -41,7 +41,7 @@ const ProductDetails = () => {
     
       {products.map(product=>(
 
-      <section className='product mr-[6rem] mt-[2rem]'  >   
+      <section className='product mr-[6rem] mt-[2rem]' key={product.id}  >   
       <div className='productimage flex items-center justify-center relative  '> 
          <Image className='h-[35rem]' height={100} width={500} src={"/Assets/"+product.picture2} alt="" /> 
         <div className='h-[35rem] absolute top-0 hover:opacity-0 transition ease-in-out delay-100 bg-white'>
@@ -102,7 +102,7 @@ const ProductDescription = (props) => {
 
   <div>
       {products.map(product=>(
-        <div className='productdescription'>
+        <div className='productdescription' key={product.id}>
         <div>
           {product.product_description}
         </div>

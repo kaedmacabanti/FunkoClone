@@ -1,5 +1,5 @@
  
-import logo from '../assets/funko-logo-white.svg'
+import logo from '../assets/toybox.png'
 import hero from '../assets/images/navicons/batman.png'
 import orange from '../assets/images/navicons/orange.png'
 import supman from '../assets/images/navicons/supman.png'
@@ -21,7 +21,7 @@ const Navigation = () => {
   return (
     <nav className='nav'> 
       <ul>
-       <Link href="/page/Home"><Image className="logo"  src={logo}  alt="" /></Link>
+       <Link href="/page/Home"><Image className="logo" src={logo} height={94} alt="" /></Link>
        <Link href="/page/Home" className='nl transition ease-out duration-500' >PRODUCTS</Link>
        <Link href="/page/Home" className='nl transition ease-out duration-500'>FEATURED</Link>
        <Link href="/page/Home" className='nl transition ease-out duration-500'>FUNATICS!</Link>
